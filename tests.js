@@ -19,7 +19,13 @@ describe('sayHello', function(){
     it('should be a defined function', function () {
         expect(typeof sayHello).toBe('function');
     });
-    it("should return a string when called.", function(){
-        expect(typeof sayHello()).toBe("string")
-    })
+    it('should return a string when called.', function(){
+        expect(typeof sayHello()).toBe("string");
+    });
+    it('Should return "Hello, Jane" when executed', function(){
+        expect(sayHello("Jane")).toBe("Hello, Jane");
+    });
+    it('Should return "Hello, Alex" when "Alex" is passed as input', function() {
+        expect(sayHello("Alex")).toBe("Hello, Alex");
+    });
 });
