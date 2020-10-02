@@ -4,7 +4,10 @@ function helloWorld() {
 }
 
 function sayHello(input) {
-   return "Hello, " + input;
+    if(typeof input == 'undefined' || typeof input == "boolen"){
+        return "Hello, world";
+    }
+        return "Hello, " + input;
 }
 
 
